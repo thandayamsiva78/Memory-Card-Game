@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="game-board">
+            <h1>𝓜𝓮𝓶𝓸𝓻𝔂 𝓒𝓪𝓻𝓭 𝓖𝓪𝓶𝓮</h1>
+            <section class="levels">
+                <h3>Select Difficulty</h3>
+                <div id="level1">Level 1</div>
+                <div id="level2">Level 2</div>
+                <div id="level3">Level 3</div>
+                <div id="level4">Level 4</div>
+                <div id="level5">Level 5</div>
+            </section>
+            <button id="homeBtn">Home</button>
+            <section >
+                <div class="diff-score" style="display: none;">
+                    <div class="difficulty" id="difficulty">Difficulty</div>
+                    <div id="score">Score :</div>
+                </div>
+                <div id="container"></div>
+            </section>
+            <section class="popup-box">
+                <h1>READY TO PLAY</h1>
+                <div class="game-info">
+                    <p id="timer"> Time: 0s</p>
+                    <p id="attempts">Attempts: 0</p>
+                </div>
+                <div>
+                    <button id="start">Start</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+            </section>
+        </section>
+        <button id="goBackBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+            </svg>
+        </button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: royalblue;
+            
+        }
+
+        main {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 800px;
+            height: 700px;
+            background-color: rgba(245, 245, 245, 0.295);
+            border-radius: 16px;
+            padding: 10px;
+            text-align: center;
+            font-family: sans-serif;
+
+        }
+
+        .levels>div {
+            width: 100%;
+            padding: 20px 0;
+            margin: 10px 0px;
+            gap: 10px;
+            background-color: lightgray;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: larger;
+        }
+        .levels>div:hover{
+            background-color: rgba(0, 0, 0, 0.884);
+            color: white;
+        }
+        h1{
+            font-size: 45px;
+            text-shadow: 2px 4px 10px rgb(255, 255, 255);
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>𝓜𝓮𝓶𝓸𝓻𝔂 𝓒𝓪𝓻𝓭 𝓖𝓪𝓶𝓮</h1>
+        <section class="levels">
+            <h3>𝓢𝓮𝓵𝓮𝓬𝓽 𝓒𝓪𝓽𝓮𝓰𝓸𝓻𝔂</h3>
+            <div onclick="redirect('./src/numbers/index.html')">Numbers</div>
+            <div onclick="redirect('./src/ABCD/index.html')">ABCD</div>
+            <div onclick="redirect('./src/animals/index.html')">Animals</div>
+        </section>
+    </main>
+    <script>
+
+        function redirect(page){
+            location.href = page;
+        }
+    </script>
+</body>
+
+</html>
+
